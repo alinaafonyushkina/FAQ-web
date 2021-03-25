@@ -49,6 +49,7 @@ footer {
         margin-top: 30px;
         max-width: 400px;
         padding: 20px;
+        border-radius: 5px;
 
         &:hover {
             box-shadow: 0 0 10px rgb(0, 0, 0);
@@ -73,8 +74,6 @@ footer {
 }
 
 .footer {
-    display: flex;
-    align-items: center;
 
     &-text {
         font-style: italic;
@@ -90,4 +89,30 @@ footer {
         color: #646464;
     }
 
+    &-git {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+}
+
+.button-git {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #646464;
+    font-size: 14px;
+
+    &:hover {
+        font-size: 16px;
+        background-color: white;
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+    }
 }
