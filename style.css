@@ -64,6 +64,7 @@ footer {
   max-width: 400px;
   padding: 20px;
   border-radius: 5px;
+  margin-bottom: 30px;
 }
 
 .content-box__card:hover {
