@@ -40,6 +40,42 @@ body {
           align-items: center;
 }
 
+.top-header:hover {
+  -webkit-animation: rotate-scale-up 0.65s linear both;
+  animation: rotate-scale-up 0.65s linear both;
+  color: #e78d43;
+}
+
+@-webkit-keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+
 main {
   min-height: 1000px;
 }
@@ -68,17 +104,25 @@ footer {
 }
 
 .content-box__card:hover {
-  -webkit-box-shadow: 0 0 10px black;
-          box-shadow: 0 0 10px black;
+  -webkit-box-shadow: 0px 19px 35px 15px rgba(34, 60, 80, 0.15);
+          box-shadow: 0px 19px 35px 15px rgba(34, 60, 80, 0.15);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
 .content-box__card:hover .content-box__card__header {
   font-size: 25px;
-  color: red;
+  color: #e78d43;
+}
+
+.content-box__card__link {
+  text-decoration: none;
 }
 
 .content-box__card__link:hover {
-  color: orangered;
+  color: #ee8863;
 }
 
 .content-box__card__list {
@@ -122,7 +166,7 @@ footer {
   width: 170px;
   height: 10px;
   padding: 10px;
-  border: 1px solid #000;
+  border: 1px solid #b1b1b1;
   border-radius: 5px;
   text-decoration: none;
   color: #646464;
@@ -130,9 +174,14 @@ footer {
 }
 
 .button-git:hover {
-  font-size: 16px;
+  font-size: 14px;
   background-color: white;
-  -webkit-box-shadow: 0 0 10px black;
-          box-shadow: 0 0 10px black;
+  -webkit-box-shadow: 0px 19px 35px 15px rgba(34, 60, 80, 0.15);
+          box-shadow: 0px 19px 35px 15px rgba(34, 60, 80, 0.15);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
